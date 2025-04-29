@@ -32,15 +32,12 @@ Scroll through the list of network requests and look for one containing "histori
 
 
 ![Screenshot](MonitoringHubAPIURL.png)
-Open Microsoft Fabric in your browser.
-Go to the Monitoring Hub.
-Open Developer Tools (Ctrl+Shift+I), go to the Network tab, and look for requests to .../metadata/monitoringhub/histories.
-Copy the full URL and replace the placeholder.
 
 
-Update the token retrieval in monitor_fabric_jobs.py:
 
-Replace the get_fabric_token() function with your actual token retrieval method (e.g., using Azure AD or Fabric's notebookutils if running in a notebook).
+Update the token retrieval :
+
+(e.g., using Azure AD or Fabric's notebookutils if running in a notebook).
 
 
 
