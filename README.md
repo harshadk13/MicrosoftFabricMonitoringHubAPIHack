@@ -15,6 +15,22 @@ A Microsoft Fabric account with access to the Monitoring Hub.
 A valid authentication token (e.g., retrieved via Azure AD or Fabric notebook environment).
 
 Discover the Monitoring Hub API URL:
+
+How to Find the Monitoring Hub API URL in Microsoft Fabric
+Follow these steps to locate the unofficial Monitoring Hub API URL using your browser's developer tools:
+
+1. Start on the Fabric Home Page
+Open Microsoft Fabric in your browser and navigate to the Home page.
+2.Access Developer Tools
+Right-click anywhere on the page and select "Inspect," or press Ctrl+Shift+I (Windows/Linux) or Cmd+Option+I (Mac) to open the developer tools.
+3. Go to the Network Tab
+In the developer tools, switch to the "Network" tab to monitor network activity.
+4. Navigate to the Monitoring Hub
+In Fabric, click on the "Monitoring Hub" section. This will trigger new network requests, which will appear in the Network tab.
+5. Locate the "Histories" Request
+Scroll through the list of network requests and look for one containing "histories" in the URL (e.g., .../metadata/monitoringhub/histories). Click on this request to view its details, including the full URL and response data.
+
+
 ![Screenshot](MonitoringHubAPIURL.png)
 Open Microsoft Fabric in your browser.
 Go to the Monitoring Hub.
