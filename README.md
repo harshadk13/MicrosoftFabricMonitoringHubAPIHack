@@ -15,11 +15,11 @@ A Microsoft Fabric account with access to the Monitoring Hub.
 A valid authentication token (e.g., retrieved via Azure AD or Fabric notebook environment).
 
 Discover the Monitoring Hub API URL:
-
+![Screenshot](MonitoringHubAPIURL.png)
 Open Microsoft Fabric in your browser.
 Go to the Monitoring Hub.
 Open Developer Tools (Ctrl+Shift+I), go to the Network tab, and look for requests to .../metadata/monitoringhub/histories.
-Copy the full URL and replace the placeholder in monitor_fabric_jobs.py.
+Copy the full URL and replace the placeholder.
 
 
 Update the token retrieval in monitor_fabric_jobs.py:
